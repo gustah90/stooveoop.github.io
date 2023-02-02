@@ -1,0 +1,14 @@
+:root {
+  --stove-base-color: #ffffff;
+  --stove-burners-bg-color: #7e7e7e;
+  --stove-lighters-color: #f5f5f5;
+  --stove-elements-box-shadow: #888888;
+  --stove-black-color: #000000;
+  --stove-oven-glass-color: #20202062;
+  --stove-oven-cap-initial-color: #ccccccb3;
+  --stove-oven-cap-final-color: #eeeeee44;
+  --stove-gray-shadow: #cccccc;
+  --stove-gray-shadow-lighter: #858585;
+  --stove-gray-shadow-handle: #838383;
+  --text-content-color: #6c7e63;
+}

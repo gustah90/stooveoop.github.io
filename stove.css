@@ -1,0 +1,157 @@
+@import "/Resources/styles.css";
+@import "/Resources/variables.css";
+
+.page-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 11%;
+  width: 100vw;
+}
+.text-container {
+  height: 32vh;
+  width: 25vw;
+  padding: 2rem;
+  background-color: var(--stove-base-color);
+  text-align: center;
+  line-height: 2;
+  border-radius: 4px;
+}
+.text-by-binding {
+  text-transform: uppercase;
+  font-family: sans-serif;
+  color: var(--text-content-color);
+  font-size: 16px;
+  font-weight: 700;
+  cursor: default;
+  display: flex;
+  flex-flow: column;
+}
+.text-content {
+  text-transform: uppercase;
+  font-family: sans-serif;
+  color: var(--text-content-color);
+  font-size: 5em;
+  font-weight: 700;
+  cursor: default;
+}
+.stove-container {
+  height: 48vh;
+  max-width: 24vw;
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+}
+.stove-cap {
+  height: 14vh;
+  width: 24vw;
+  background: linear-gradient(
+    var(--stove-oven-cap-final-color),
+    var(--stove-oven-cap-initial-color)
+  );
+  border-radius: 2px;
+}
+.stove-burners {
+  height: 3vh;
+  background-color: var(--stove-burners-bg-color);
+  border-radius: 2px;
+  display: grid;
+  grid-auto-rows: 8px;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+}
+.stove-burner-off {
+  height: 24px;
+  width: 80px;
+}
+.stove-burner-off:nth-child(1),
+.stove-burner-off:nth-child(2) {
+  height: 16px;
+  margin: -4px 0 0 0;
+}
+.stove-lighters {
+  height: 5.5vh;
+  background-color: var(--stove-lighters-color);
+  border-radius: 2px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.stove-oven-lamp-button {
+  height: 12px;
+  width: 4px;
+  cursor: pointer;
+  background: linear-gradient(
+    var(--stove-gray-shadow),
+    var(--stove-black-color)
+  );
+  box-shadow: 2px 0 4px var(--stove-elements-box-shadow);
+}
+.stove-lighters-container {
+  display: grid;
+  grid-auto-rows: 0px;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 0.3rem;
+}
+.stove-lighter {
+  border-radius: 50px;
+  width: 12px;
+  height: 12px;
+  background-color: var(--stove-black-color);
+  background: linear-gradient(
+    0.25turn,
+    var(--stove-gray-shadow-lighter),
+    var(--stove-black-color)
+  );
+  cursor: pointer;
+  margin: 0 1rem;
+  box-shadow: 2px 3px 4px var(--stove-elements-box-shadow);
+}
+.stove-brand {
+  text-transform: uppercase;
+  font-family: monospace;
+  font-weight: bolder;
+  text-shadow: 1px 0px 6px var(--stove-black-color);
+}
+.stove-oven {
+  background-color: var(--stove-base-color);
+  height: 20vh;
+  border-radius: 2px;
+  flex-flow: column;
+}
+.stove-oven-glass {
+  border-radius: 8px;
+  width: 20vw;
+  height: 15vh;
+  background-color: var(--stove-oven-glass-color);
+}
+.stove-oven-handle {
+  width: 16vw;
+  height: 2vh;
+  background: linear-gradient(
+    var(--stove-base-color),
+    var(--stove-black-color)
+  );
+  box-shadow: 5px 4px 10px var(--stove-elements-box-shadow);
+  border-radius: 20px;
+  margin-bottom: -16px;
+}
+.stove-footers {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.left-stove-foot,
+.right-stove-foot {
+  border-radius: 10px 10px 2px 2px;
+  background: linear-gradient(
+    var(--stove-base-color),
+    var(--stove-gray-shadow)
+  );
+  width: 2rem;
+  height: 2rem;
+}
+
+.oven-light {
+  background: #fff000;
+}
