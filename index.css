@@ -1,5 +1,5 @@
-@import "/Resources/styles.css";
-@import "/Resources/variables.css";
+@import "./Resources/styles.css";
+@import "./Resources/variables.css";
 
 .page-container {
   display: flex;
