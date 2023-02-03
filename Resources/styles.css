@@ -2,7 +2,7 @@ html {
   height: 100%;
 }
 body {
-  background-image: url("/Assets/bg_1633x1080.jpg");
+  background-image: url("../Resources/Assets/bg_1633x1080.jpg");
   background-position: 0%;
   background-repeat: no-repeat;
   background-attachment: fixed;
