@@ -1,16 +1,15 @@
 export class Lighter {
-  constructor(color, id, stoveTool) {
+  constructor(color, stoveTool) {
     this.lighterColor = color;
     this.turnedOn = false;
-    this.id = id;
     this.stoveTool = stoveTool;
   }
-  turnOn(index) {
-    this.id = index;
+  turnOn() {
     this.turnedOn = true;
+    this.stoveTool.fireUp();
   }
-  turnOff(index) {
-    this.id = index;
+  turnOff() {
     this.turnedOn = false;
+    this.stoveTool.fireDown();
   }
 }

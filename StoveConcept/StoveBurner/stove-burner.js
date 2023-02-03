@@ -1,7 +1,14 @@
 import { Lighter } from "../Lighter/lighter.js";
 
-export class StoveBurner extends Lighter {
+export class StoveBurner {
   constructor() {
-    super();
+  }
+
+  fireUp() {
+    console.log("burning")
+  }
+
+  fireDown() {
+    console.log("fire down")
   }
 }

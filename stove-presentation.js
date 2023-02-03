@@ -1,6 +1,12 @@
 import { Stove } from "./StoveConcept/Stove/stove.js";
 
-const stoveData = new Stove();
+const stoveParams = {
+  color: "white",
+  brand: "Notable",
+  width: `${60}cm`,
+  height: `${90}cm`,
+};
+const stoveData = new Stove(stoveParams);
 const lighterColorBase = stoveData.stovePanel.lightersColors;
 const lighterToolBase = stoveData.stovePanel.lightersStoveTool;
 document.querySelector(".stove-brand").innerHTML = stoveData.brand;
@@ -18,11 +24,11 @@ setTimeout(() => {
   ).innerHTML = `what have ${stoveData.stovePanel.lightersQuantity}
     lighters with ${stoveData.stovePanel.lightersQuantity} different colors:
     <ul>
-      <li style="color: ${lighterColorBase[0]}">${lighterColorBase[0]} from ${lighterToolBase[0]} lighter</li>
-      <li style="color: ${lighterColorBase[1]}">${lighterColorBase[1]} from ${lighterToolBase[1]} lighter</li>
-      <li style="color: ${lighterColorBase[2]}">${lighterColorBase[2]} from ${lighterToolBase[2]} lighter</li>
-      <li style="color: ${lighterColorBase[3]}">${lighterColorBase[3]} from ${lighterToolBase[3]} lighter</li>
-      <li style="color: ${lighterColorBase[4]}">${lighterColorBase[4]} from ${lighterToolBase[4]} lighter</li>
+      <li style="color: ${lighterColorBase[0]}">${lighterColorBase[0]}</li>
+      <li style="color: ${lighterColorBase[1]}">${lighterColorBase[1]}</li>
+      <li style="color: ${lighterColorBase[2]}">${lighterColorBase[2]}</li>
+      <li style="color: ${lighterColorBase[3]}">${lighterColorBase[3]}</li>
+      <li style="color: ${lighterColorBase[4]}">${lighterColorBase[4]}</li>
     </ul>`;
 }, 4000);
 setTimeout(() => {
